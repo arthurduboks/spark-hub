@@ -20,5 +20,4 @@ const ideasRouter = require("./routes/ideas");
 app.use("/api/ideas", ideasRouter);
 
 // Error handling middleware
-
 app.listen(port, () => console.log(`Listening on port ${port}`));
