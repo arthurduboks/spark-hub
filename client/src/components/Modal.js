@@ -9,6 +9,7 @@ class Modal {
   addEventListeners() {
     this._modalBtn.addEventListener("click", this.open.bind(this));
     window.addEventListener("click", this.outsideClick.bind(this));
+    window.addEventListener("touchstart", this.outsideClick.bind(this));
   }
 
   open() {
