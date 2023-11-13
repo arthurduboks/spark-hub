@@ -26,9 +26,11 @@ Spark-Hub is a full-stack web application that allows users to post and share ra
    ```bash
    git clone https://github.com/arthurduboks/spark-hub
    cd spark-hub
-Install Dependencies
 
+**Install Dependencies**
+```bash
 npm install
+
 This command installs all the necessary Node.js packages required for the project.
 
 Database Setup
@@ -40,7 +42,7 @@ Environment Variables
 Set up necessary environment variables if required (like database URI, port numbers, etc.).
 Start the Server
 
-bash
-Copy code
+```bash
 npm start
+
 This command starts the Node.js server. By default, the server will run on http://localhost:3000.
