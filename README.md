@@ -14,13 +14,35 @@ Spark-Hub is a full-stack web application that allows users to post and share ra
 - **AXIOS for API Requests**: Utilizes AXIOS for streamlined and reliable API requests.
 
 ## Installation Guide 🛠️
-To get started with Spark-Hub:
 
-1. **Clone the Repository**:
-2. **Install Node.js**:
-- Download and install Node.js from the [official website](https://nodejs.org/).
-3. **Install Dependencies**:
-to launch the Node.js server.
-6. **Access the Application**:
-- Open your browser and visit `http://localhost:[port]` to view the application.
+### Prerequisites
+- Node.js
+- NPM (Node Package Manager)
+- MongoDB
 
+### Setting Up
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/arthurduboks/spark-hub
+   cd spark-hub
+Install Dependencies
+
+bash
+Copy code
+npm install
+This command installs all the necessary Node.js packages required for the project.
+
+Database Setup
+
+Ensure MongoDB is installed and running on your system.
+You may need to create a new database for Spark-Hub.
+Environment Variables
+
+Set up necessary environment variables if required (like database URI, port numbers, etc.).
+Start the Server
+
+bash
+Copy code
+npm start
+This command starts the Node.js server. By default, the server will run on http://localhost:3000.
