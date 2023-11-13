@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+h1 {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  font-size: 2.5em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ff6600;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+#modal-btn {
+  border: none;
+  background: none;
+  color: #008000;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  margin: 10% auto;
+  max-width: 600px;
+  background-color: #6d9bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+form input,
+form textarea {
+  max-width: 600px;
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 0;
+  margin: 10px 0;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.btn {
+  background-color: #383838;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.ideas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.ideas .card {
+  position: relative;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 10px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #d0d0d0;
+  transition: all 0.3s ease;
+}
+
+.ideas .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tag {
+  display: inline-block;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 0.7rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.3rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 50%;
+  max-width: 100px;
+  position: relative;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.tag:focus {
+  outline: 0;
+}
+
+.tag::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.tag-technology {
+  background: #4682b4;
+}
+
+.tag-software {
+  background: #ff7f50;
+}
+
+.tag-business {
+  background: #008000;
+}
+
+.tag-education {
+  background: #800080;
+}
+
+.tag-health {
+  background: #ff0000;
+}
+
+.tag-inventions {
+  background: #ffa500;
+}
+
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff0000;
+  background: none;
+  border: none;
+}
+
+.delete:hover {
+  color: #000;
+}
+
+.date {
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .modal-box {
+    width: 90%;
+  }
+}
+
