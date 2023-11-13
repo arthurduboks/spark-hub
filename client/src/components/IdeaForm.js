@@ -32,7 +32,7 @@ class IdeaForm {
       username: this._form.elements.username.value,
     };
     // Add idea to server
-    const newIdea = await IdeasApi.createNewIdea(idea);
+    const newIdea = await IdeasApi.createIdea(idea);
 
     // Add idea to list
     this._ideaList.addIdeaToList(newIdea.data.data);
