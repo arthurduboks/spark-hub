@@ -3,6 +3,7 @@ class Modal {
     this._modal = document.querySelector("#modal");
     this._modalBtn = document.querySelector("#modal-btn");
     this.addEventListeners();
+    document.addEventListener("closeModal", () => this.close());
   }
 
   addEventListeners() {
