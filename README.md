@@ -28,8 +28,6 @@ Spark-Hub is a full-stack web application that allows users to post and share ra
    cd spark-hub
 Install Dependencies
 
-bash
-Copy code
 npm install
 This command installs all the necessary Node.js packages required for the project.
 
