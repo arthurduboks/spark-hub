@@ -13,3 +13,6 @@ Spark-Hub is a full-stack web application that allows users to post and share ra
 - **RESTful API**: Features a custom REST API for efficient data handling and manipulation.
 - **AXIOS for API Requests**: Utilizes AXIOS for streamlined and reliable API requests.
 
+## Note
+When visiting the live preview link, the initial load time may be longer due to Render's free tier.
+
